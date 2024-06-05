@@ -80,7 +80,7 @@ class Posicionador:
             time.sleep(0.1)
 
             # Si la respuesta tiene una longitud en especifico, hay conexión
-            if self.serial_port.in_waiting >= 56:
+            if self.serial_port.in_waiting >= 28:
                 self.serial_port.reset_input_buffer()
                 return True
 
